@@ -662,35 +662,23 @@ img {
       text-transform: uppercase; }
       .single-slide .welcome-text h2 span {
         color: rgb(194, 4, 8); }
-        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
           .single-slide .welcome-text h2 {
             font-size: 48px;
            
            }
             .welcome-text .icon{
-              width: 25%;
-              display: flex;
-              margin-left: 10%;
+              width: 20%;
+              
             } }
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
-              .single-slide .welcome-text h2 {
-                font-size: 48px;
-               }
-               .single-slide .welcome-text p {
-                font-size: 25px;
-                margin-top: 20px;
-                color: #ffffff; }
-                .welcome-text .icon{
-                  width: 100%;
-                  margin-left: 10%;
-                } }
+            
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .single-slide .welcome-text h2 {
             font-size: 42px;
            }
             .welcome-text .icon{
-              width: 30%;
-              margin-left: 10%;
+              width: 80%;
+              display: inline;
             } 
             .single-slide .welcome-text p {
               font-size: 25px;
@@ -703,7 +691,7 @@ img {
             margin-top: 20px;} 
           .welcome-text .icon{
             width: 30%;
-            margin-left: 10%;
+            display: inline-block;
           }
           .single-slide .welcome-text h4 {
             font-size: 25px;
