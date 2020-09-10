@@ -180,8 +180,8 @@
                                 <li style="margin-left: -1%;"><a href="#">Digital Banking</a>
                                     <ul class="dropdown" style="width: 250px;">
                                         <li><a href="index.html">Agency banking</a></li>
-                                        <li><a href="index.html">Mobile banking</a></li>
-                                        <li><a href="index.html">Internet banking</a></li>
+                                        <li><a href="mobile-banking.html">Mobile banking</a></li>
+                                        <li><a href="internet-banking.html">Internet banking</a></li>
                                         <li><a href="index.html">Card center</a></li>
                                         <li><a href="index.html">ATMs</a></li>
                                       </ul>
@@ -622,23 +622,67 @@
 </section>
 <!-- ##### Call To Action End ###### -->
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area section-padding-100-0" style="background-color: #707271;">
+
+
+    <footer  class="footer-area section-padding-100-0" style="background-color: #707271;">
         <div class="container">
             <div class="row">
 
                 <!-- Single Footer Widget -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget mb-100">
-                        <h5 class="widget-title">About Us</h5>
-                        <!-- Nav -->
-                        <nav>
+                        <h5 class="widget-title" style="font-weight: bolder; color: white;">TODAY'S EXCHANGE RATE</h5>
+                        
+                       <!-- <nav>
                             <ul>
                                 <li><a href="#">Homepage</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Services &amp; Offers</a></li>
                                 
                             </ul>
-                        </nav>
+                        </nav> -->
+
+                        <table class="table table-striped" style="background-color: #C20430;">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                
+                                <th scope="col">Buy</th>
+                                <th scope="col">Sell</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">USD <img height="20px;" style="width: 20px;" src="https://icons.iconarchive.com/icons/wikipedia/flags/1024/US-United-States-Flag-icon.png"></th>
+                                <td>950.5</td>
+                                <td>970</td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">EUR <img height="20px;" style="width: 20px;" src="https://www.iconarchive.com/download/i109130/wikipedia/flags/EU-European-Union-Flag.ico"></th>
+                                <td>1089</td>
+                                <td>1184</td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">GBF <img height="20px;" style="width: 20px;" src="https://i.pinimg.com/originals/ee/ac/e4/eeace48b70d2fa33265f30d88eddcee7.png"></th>
+                                <td>1204</td>
+                                <td>1320</td>
+                               
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <p style="color: white;">At: <span id="hourtime"></span> - Kigali on: <span id="datetime"></span></p>
+
+                            <script>
+                            var dt = new Date();
+                            var ht = new Date();
+                            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                            document.getElementById("hourtime").innerHTML = dt.toLocaleTimeString();
+                            </script>
+
+                         <a href="#" class="btn credit-btn box-shadow btn-2">View Details</a>
                     </div>
                 </div>
 
